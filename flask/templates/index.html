@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédiction de Modèle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily EUR/USD Forecast - Navigating Market Movements</h1>
+        <p>The day to predict: {{ tomorrow }}</p>
+        
+        <form id="predictForm" action="/predict" method="post">
+            <button type="submit" class="predict-button">Predict</button>
+        </form>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

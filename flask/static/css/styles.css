@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://example.com/background-image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #ff5722; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19; /* Hover color */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller boxes */
+    justify-content: center; /* Center-align the result boxes */
+}
+
+.result-box {
+    background-color: rgba(255, 255, 255, 0.1); /* Light semi-transparent background for result box */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    margin: 10px; /* Spacing between boxes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+    flex: 0 0 calc(50% - 20px); /* Two boxes per row with spacing */
+    text-align: center; /* Center-align text */
+}
+
+.result-box h3 {
+    margin: 0 0 10px 0; /* Margin for heading */
+    color: #ffeb3b; /* Yellow text color for headings */
+    font-size: 1.2em; /* Slightly smaller font size */
+}
+
+.result-box p {
+    font-size: 1.1em; /* Smaller text size for values */
+    color: #ffffff; /* Slightly lighter text color */
+}
+
+/* Default action-box style */
+.action-box {
+    background-color: #e20909; /* Yellow background for non-Buy actions */
+    color: white; /* Text color */
+    font-size: 1.5em; /* Larger font size for action */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Inner spacing */
+    margin: 10px; /* Spacing between action box and others */
+    flex-basis: 100%; /* Full width */
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* If the action is Buy, apply green background */
+.action-box.buy {
+    background-color: rgb(27, 57, 0); /* Green background for Buy */
+}

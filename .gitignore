@@ -1,0 +1,12 @@
+# Ignore virtual environments
+venv/
+.env/
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
