@@ -12,17 +12,7 @@ This project predicts daily actions for the EUR/USD stock market using deep lear
 3. Colab access for running Jupyter notebooks.
 
 ## Setup Instructions
-### Step 1: Clone the Project
-... (add cloning instructions)
 
-### Step 2: Access the Project on Google Colab
-... (add Colab instructions)
-
-### Step 3: Download the Trained Project Directory
-... (add download instructions)
-
-### Step 4: Run the Flask Application
-... (add Flask instructions)
 
 ## Project Architecture
 ![Project Architecture](architecture-diagram.png)
