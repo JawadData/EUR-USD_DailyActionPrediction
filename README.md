@@ -3,9 +3,11 @@ This project predicts daily actions for the EUR/USD stock market using deep lear
 ---
 
 ## Requirements
-1. Google Drive account linked to Google Colab.
-2. Python installed locally for running the Flask app.
-3. Colab access for running Jupyter notebooks.
+
+1. A Google Drive account linked to Google Colab for data storage and notebook execution.
+2. Python installed locally to run the Flask web application.
+3. Access to Google Colab for running and experimenting with Jupyter notebooks.
+
 ---
 l
 ## Project Architecture
