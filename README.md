@@ -10,15 +10,16 @@ This project predicts daily actions for the EUR/USD stock market using deep lear
 
 This architecture diagram outlines the workflow of the EUR/USD stock prediction project. Below is a breakdown of the key components:
 
-1. **Data Source**: Market data is retrieved from Yahoo Finance in Parquet format using Python for efficient storage and processing.
-2. **Data Processing**: The data is transformed and prepared for training both regression and classification models.
+1. **Data Source**: Market data is retrieved from Yahoo Finance in Parquet format using Python, ensuring efficient storage and processing.
+2. **Data Processing**: The data is transformed and prepared for the training of both regression and classification models.
 3. **Model Training**:
    - **Regression Models**: These models analyze historical stock data to predict key price points (open, close, high, low).
-   - **Classification Model**: This model classifies the predicted actions (Buy/Sell) based on features generated from the regression results.
-4. **First Output**: Predictions from the regression models are saved in JSON format for easy access and further analysis.
-5. **Additional Data Processing**: The regression model predictions are incorporated into the original Parquet file to generate new features, which are then used to train the classification model.
-6. **Second Output**: Predictions from the classification model (Buy/Sell actions) are also saved in JSON format for easy access.
-7. **Web Interface**: A Flask-based web application displays the predictions to users through an interactive interface.
+   - **Classification Model**: This model classifies the predicted actions (Buy/Sell) based on rules derived from key price points.
+4. **First Output**: Predictions from the regression models are stored in JSON format for easy access and further analysis.
+5. **Additional Data Processing**: The predictions from the regression models are integrated into the original Parquet file to generate new rules for the next day's predictions, which are then used as input for the classification model.
+6. **Second Output**: Predictions from the classification model (Buy/Sell actions) are also stored in JSON format for easy access.
+7. **Web Interface**: A Flask-based web application provides users with an interactive interface to view the predictions.
+
 
 ---
 
