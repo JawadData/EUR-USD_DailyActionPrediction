@@ -11,7 +11,7 @@ The architecture diagram illustrates the workflow of the EUR/USD stock predictio
 3. **Model Training**:
    - **Regression Models**: These models analyze historical data to predict stock trends.
    - **Classification Model**: This model classifies the predicted actions (Buy/Sell).
-4. **Results**: The predictions are saved in JSON format for easy access.
+4. **first Result**: The predictions of regression models are saved in JSON format for easy access.
 5. **Web Interface**: A Flask application presents the predictions to users.
 
 
