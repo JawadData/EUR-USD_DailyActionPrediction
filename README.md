@@ -38,9 +38,8 @@ This architecture diagram outlines the workflow of the EUR/USD stock prediction 
 4. **Run the Application**: Using a terminal, navigate to the extracted repository, then enter the "flask" directory. Run the following command to start the application:  
    ```bash
    python app.py
-
-
+---
 
 ## Future Improvements
 - Automate the retraining process using Airflow.
-- Deploy the app via a cloud provider (e.g., Heroku, AWS).
+- Deploy the app via a cloud provider (e.g., AWS).
