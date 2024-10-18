@@ -6,10 +6,8 @@ This project predicts daily actions for the EUR/USD stock market using deep lear
 
 1. A Google Drive account linked to Google Colab for data storage and notebook execution.
 2. Python installed locally to run the Flask web application.
-3. Access to Google Colab for running and experimenting with Jupyter notebooks.
-
 ---
-l
+
 ## Project Architecture
 ![Project Architecture](architecture-diagram.png)
 ---
@@ -29,23 +27,20 @@ This architecture diagram outlines the workflow of the EUR/USD stock prediction 
 7. **Web Interface**: A Flask-based web application provides users with an interactive interface to view the predictions.
 ---
 
-
-
 ## Setup Instructions
 
+1. **Repository Location**: Upload the repository to the "My Drive" section of your Google Drive account. Ensure that you are using the same account you log in to Google Colab with.
+
+2. **Notebook Execution**: Import the notebook named "run_me" into Colab and execute it. This will train the models and automatically save the results.
+
+3. **Export the Repository**: After executing the notebook, the modifications will be automatically saved to the repository on your Google Drive. You can then export this repository.
+
+4. **Run the Application**: Using a terminal, navigate to the extracted repository, then enter the "flask" directory. Run the following command to start the application:  
+   ```bash
+   python app.py
 
 
-
-### Overview
-The architecture diagram illustrates the workflow of the EUR/USD stock prediction project. Here’s a breakdown of the components:
-1. **Data Source**: Data is fetched from Yahoo Finance.
-2. **Data Processing**: The data is converted into Parquet format for efficient storage and processing.
-3. **Model Training**:
-   - **Regression Models**: These models analyze historical data to predict stock trends.
-   - **Classification Model**: This model classifies the predicted actions (Buy/Sell).
-4. **Results**: The predictions are saved in JSON format for easy access.
-5. **Web Interface**: A Flask application presents the predictions to users.
 
 ## Future Improvements
-- Automate the retraining process using Airflow and Docker.
+- Automate the retraining process using Airflow.
 - Deploy the app via a cloud provider (e.g., Heroku, AWS).
