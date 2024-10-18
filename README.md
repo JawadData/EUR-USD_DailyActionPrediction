@@ -2,6 +2,12 @@
 This project predicts daily actions for the EUR/USD stock market using deep learning models. It includes API integration, model training, and a web interface with Flask for visualization.
 ---
 
+## Requirements
+1. Google Drive account linked to Google Colab.
+2. Python installed locally for running the Flask app.
+3. Colab access for running Jupyter notebooks.
+---
+l
 ## Project Architecture
 ![Project Architecture](architecture-diagram.png)
 ---
@@ -19,20 +25,9 @@ This architecture diagram outlines the workflow of the EUR/USD stock prediction 
 5. **Additional Data Processing**: The predictions from the regression models are integrated into the original Parquet file to generate new rules for the next day's predictions, which are then used as input for the classification model.
 6. **Second Output**: Predictions from the classification model (Buy/Sell actions) are also stored in JSON format for easy access.
 7. **Web Interface**: A Flask-based web application provides users with an interactive interface to view the predictions.
-
-
 ---
 
 
-
-## Project Overview
-- **Languages:** Python, Jupyter (for Colab)
-- **Tools/Technologies:** Flask, Colab, Google Drive, Deep Learning models
-
-## Requirements
-1. Google Drive account linked to Google Colab.
-2. Python 3.x installed locally for running the Flask app.
-3. Colab access for running Jupyter notebooks.
 
 ## Setup Instructions
 
